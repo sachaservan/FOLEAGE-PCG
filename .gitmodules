@@ -1,0 +1,3 @@
+[submodule "libs/tri-dpf"]
+	path = libs/tri-dpf
+	url = https://github.com/sachaservan/tri-dpf
