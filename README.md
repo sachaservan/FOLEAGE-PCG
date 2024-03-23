@@ -39,6 +39,7 @@ OpenSSL can be installed via `brew install openssl` or manually.
 Test:
 
 ```
+git submodule update --init --recursive
 make
 ./bin/pcg --test
 ```
@@ -46,6 +47,7 @@ make
 Benchmarks:
 
 ```
+git submodule update --init --recursive
 make
 ./bin/pcg --bench
 ```
