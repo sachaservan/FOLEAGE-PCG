@@ -7,6 +7,7 @@
 #include <time.h>
 
 #include "fft.h"
+#include "utils.h"
 
 #define NUMVARS 16
 
