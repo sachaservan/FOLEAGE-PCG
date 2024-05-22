@@ -55,6 +55,17 @@ make
 DPF benchmarks:
 See the [DPF repository](https://github.com/sachaservan/tri-dpf).
 
+SPFSS benchmarks:
+Since the SPFSS benchmarks are specific to FOLEAGE, we provide a special test file `spfss_test.cs` which can be used to benchmark the above DPF implementation. To do so, run:
+
+```
+cd libs
+mv tri-dpf/src/test.c tri-dpf/src/test.old
+cp spfss_test.c tri-dpf/src/test.c
+cd tri-dpf
+make && ./bin/test
+```
+
 FFT benchmarks
 
 ```
