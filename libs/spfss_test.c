@@ -10,7 +10,7 @@
 #include "dpf.h"
 #include "utils.h"
 
-#define SUMT 400 // sum of T DPFs
+#define SUMT 730 // sum of T DPFs
 
 #define FULLEVALDOMAIN 10
 #define MESSAGESIZE 8
