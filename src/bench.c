@@ -17,9 +17,14 @@
 
 #define DPF_MSG_SIZE 8
 
-double bench_pcg_c4(size_t n, size_t t)
+double bench_pcg(size_t n, size_t c, size_t t)
 {
-    const size_t c = 4;
+    if (c > 4)
+    {
+        printf("ERROR: currently only implemented for c <= 4");
+        exit(0);
+    }
+
     const size_t poly_size = ipow(3, n);
 
     //************************************************************************
