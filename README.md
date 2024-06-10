@@ -77,7 +77,7 @@ make && ./bin/fft
 
 The parameters `c` and `t` can be computed using the [SageMath parameter selection script](https://github.com/mbombar/estimator_folding).
 We provide reasonable choices of `c` and `t` in Table 2 of [the paper](https://eprint.iacr.org/2024/429.pdf).
-In particular, our benchmarks use `(c=4, t=20)` as a conservative parameter choice and `(c=4,t=18)` as an aggressive parameter choice, when targeting at least $\lambda=128$ bits of security.
+In particular, our benchmarks use `(c=4, t=27)` as a conservative parameter choice and `(c=3,t=27)` as an aggressive parameter choice, when targeting at least $\lambda=128$ bits of security.
 
 ## Future development
 
@@ -86,7 +86,6 @@ TODOs are left in-line, however, the broad strokes include:
 
 - [ ] Unit tests for the FFT (currently only checked by hand on a small instance).
 - [ ] Modularize the PCG construction and tests (currently the test is one monolithic block).
-- [ ] Wider range of parameters for the benchmarks (in particular, not needing `t` to be a power of 3 in the test code).
 - [ ] More efficient SIMD-based implementation of the FFT packing (a matrix transpose) which currently is implemented using the naive approach and results in the computational performance bottleneck.
 
 ## Citation
