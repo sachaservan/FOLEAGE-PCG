@@ -75,7 +75,7 @@ make && ./bin/fft
 
 ## Parameter Selection
 
-The parameters `c` and `t` can be computed using the [SageMath parameter selection script](https://github.com/mbombar/estimator_folding) (also available as a submodule).
+The parameters `c` and `t` can be computed using the [SageMath parameter selection script](https://github.com/mbombar/estimator_folding) (also available as a submodule in `scripts/parameters_selection`).
 We provide reasonable choices of `c` and `t` in Table 2 of [the paper](https://eprint.iacr.org/2024/429.pdf).
 In particular, our benchmarks use `(c=4, t=27)` as a conservative parameter choice and `(c=3,t=27)` as an aggressive parameter choice, when targeting at least $\lambda=128$ bits of security.
 
@@ -91,15 +91,26 @@ TODOs are left in-line, however, the broad strokes include:
 ## Citation
 
 ```
-@misc{foleage,
-      author = {Maxime Bombar and Dung Bui and Geoffroy Couteau and Alain Couvreur and Clément Ducros and Sacha Servan-Schreiber},
-      title = {FOLEAGE: $\mathbb{F}_4$OLE-Based Multi-Party Computation for Boolean Circuits},
-      howpublished = {Cryptology ePrint Archive, Paper 2024/429},
-      year = {2024},
-      note = {\url{https://eprint.iacr.org/2024/429}},
-      url = {https://eprint.iacr.org/2024/429}
+@inproceedings{foleage,
+  author       = {Maxime Bombar and
+                  Dung Bui and
+                  Geoffroy Couteau and
+                  Alain Couvreur and
+                  Clément Ducros and
+                  Sacha Servan-Schreiber},
+  title        = {FOLEAGE: $\mathbb{F}_{4}$OLE-Based Multi-Party
+                  Computation for Boolean Circuits},
+  note         = {\url{https://eprint.iacr.org/2024/429}},
+  editor       = {Kai-Min Chung and
+                  Yu Sasaki},
+  booktitle    = {Advances in Cryptology - {ASIACRYPT} 2024 - 30th
+                  International Conference on the Theory and
+                  Application of Cryptology and Information Security,
+                  Kolkata, India, December 9-13, 2024 %
+                  },
+  publisher    = {Springer},
+  year         = {2024},
 }
-
 ```
 
 ## ⚠️ Important Warning
