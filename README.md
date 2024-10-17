@@ -106,7 +106,7 @@ TODOs are left in-line, however, the broad strokes include:
   booktitle    = {Advances in Cryptology - {ASIACRYPT} 2024 - 30th
                   International Conference on the Theory and
                   Application of Cryptology and Information Security,
-                  Kolkata, India, December 9-13, 2024 %
+                  Kolkata, India, December 9-13, 2024
                   },
   publisher    = {Springer},
   year         = {2024},
