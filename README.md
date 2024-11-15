@@ -1,4 +1,4 @@
-#FOLEAGE PCG
+# FOLEAGE PCG
 
 A prototype implementation of the $\mathbb{F}_4$ OLEAGE Pseudorandom Correlation Generator (PCG) in C.
 See the [paper](https://eprint.iacr.org/2024/429.pdf) for details.
