@@ -100,12 +100,11 @@ TODOs are left in-line, however, the broad strokes include:
                   Sacha Servan-Schreiber},
   title        = {{FOLEAGE}: $\mathbb{F}_{\scriptstyle 4}${OLE}-Based Multi-Party
                   Computation for Boolean Circuits},
-  editor       = {Kai-Min Chung and
-                  Yu Sasaki},
-  pages =  "69--101",
+  editor       = {Kai-Min Chung and Yu Sasaki},
+  pages        =  "69--101",
   publisher    = {Springer, Singapore},
-  booktitle =    {ASIACRYPT 2024, Part VI, LNCS 15489},
-  year =         2024,
+  booktitle    = {ASIACRYPT 2024, Part VI, LNCS 15489},
+  year         = 2024,
 }
 ```
 
