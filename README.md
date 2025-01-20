@@ -92,24 +92,20 @@ TODOs are left in-line, however, the broad strokes include:
 
 ```
 @inproceedings{foleage,
-  author       = {Maxime Bombar and
+   author       = {Maxime Bombar and
                   Dung Bui and
                   Geoffroy Couteau and
                   Alain Couvreur and
                   Clément Ducros and
                   Sacha Servan-Schreiber},
-  title        = {FOLEAGE: $\mathbb{F}_{4}$OLE-Based Multi-Party
+  title        = {{FOLEAGE}: $\mathbb{F}_{\scriptstyle 4}${OLE}-Based Multi-Party
                   Computation for Boolean Circuits},
-  note         = {\url{https://eprint.iacr.org/2024/429}},
   editor       = {Kai-Min Chung and
                   Yu Sasaki},
-  booktitle    = {Advances in Cryptology - {ASIACRYPT} 2024 - 30th
-                  International Conference on the Theory and
-                  Application of Cryptology and Information Security,
-                  Kolkata, India, December 9-13, 2024
-                  },
-  publisher    = {Springer},
-  year         = {2024},
+  pages =  "69--101",
+  publisher    = {Springer, Singapore},
+  booktitle =    {ASIACRYPT 2024, Part VI, LNCS 15489},
+  year =         2024,
 }
 ```
 
