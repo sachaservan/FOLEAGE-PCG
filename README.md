@@ -3,6 +3,12 @@
 A prototype implementation of the $\mathbb{F}_4$ OLEAGE Pseudorandom Correlation Generator (PCG) in C.
 See the [paper](https://eprint.iacr.org/2024/429.pdf) for details.
 
+
+## Improved implementation
+[libOTe](https://github.com/osu-crypto/libOTe) has an improved implementation of FOLEAGE.
+We encourage using that implementation for benchmarks, as it is faster and more fully featured. 
+The version in this repository is now solely intended for reference purposes. 
+
 ## Organization
 
 The [libs/](libs/) folder contains the implementation of the (parallel) FFT and [ternary DPF](https://github.com/sachaservan/tri-dpf) (a submodule) which are both used extensively in the PCG construction.
@@ -78,15 +84,6 @@ make && ./bin/fft
 The parameters `c` and `t` can be computed using the [SageMath parameter selection script](https://github.com/mbombar/estimator_folding) (also available as a submodule in `scripts/parameters_selection`).
 We provide reasonable choices of `c` and `t` in Table 2 of [the paper](https://eprint.iacr.org/2024/429.pdf).
 In particular, our benchmarks use `(c=4, t=27)` as a conservative parameter choice and `(c=3,t=27)` as an aggressive parameter choice, when targeting at least $\lambda=128$ bits of security.
-
-## Future development
-
-The current prototype implementation can be extended in several ways.
-TODOs are left in-line, however, the broad strokes include:
-
-- [ ] Unit tests for the FFT (currently only checked by hand on a small instance).
-- [ ] Modularize the PCG construction and tests (currently the test is one monolithic block).
-- [ ] More efficient SIMD-based implementation of the FFT packing (a matrix transpose) which currently is implemented using the naive approach and results in the computational performance bottleneck.
 
 ## Citation
 
